@@ -1,10 +1,19 @@
-export default function catCard() {
-    REACT_APP_API_KEY = "live_cryzeMviH86EMISpx1pIcPxIE0uVDaKMbZ2gFSeCEipxAwEztUwW38LZ75mtwl8h"
-    const API_KEY = process.env.REACT_APP_API_KEY
+import React from "react";
+import { useEffect, useState } from "react";
 
+export default function CatCard() {
+    const [image, setImage] = React.useState({ image: "" });
 
+    React.useEffect(() => {
+        fetch('https://api.thecatapi.com/v1/images/search?api_key=live_cryzeMviH86EMISpx1pIcPxIE0uVDaKMbZ2gFSeCEipxAwEztUwW38LZ75mtwl8h')
+            .then(resp => resp.json())
+            .then(data => setImage(data[0].url))
+    }, [])
 
     return (
-        <h1></h1>
-    )
-}
+        <div>
+            <image scr='https://cdn2.thecatapi.com/images/1k9.jpg' />
+        </div>
+    );
+};
+
