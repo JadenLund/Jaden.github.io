@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 import CatCard from "./components/catCard";
+import Layout from "./components/layout";
 
 export default function App() {
   // const [image, setImage] = React.useState({ image: "" });
@@ -12,7 +13,7 @@ export default function App() {
   // }, [])
 
   return (
-    <CatCard />
+    <Layout />
   );
 };
 

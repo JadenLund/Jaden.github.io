@@ -1,10 +1,12 @@
-import catCard from "./catCard"
+import CatCard from "./catCard"
 
-export default function layout() {
+export default function Layout() {
     return (
         <>
-            <div className="background"></div>
-            <catCard />
+            <div className="background">
+
+            </div>
+            <CatCard />
         </>
 
     )
