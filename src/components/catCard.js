@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Card, Header } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 
 export default function CatCard() {
     const [image, setImage] = React.useState({ image: "" });
@@ -11,9 +13,13 @@ export default function CatCard() {
     }, [])
 
     return (
-        <div>
-            <image scr='https://cdn2.thecatapi.com/images/1k9.jpg' />
-        </div>
+        <>
+            <Card centered>
+                <Image className="cat-image" src={image} />
+            </Card>
+            <Header textAlign='center'>
+                meow
+            </Header>
+        </>
     );
 };
-
