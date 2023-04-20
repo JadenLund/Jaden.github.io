@@ -2,3 +2,4 @@
 [ ] - When clicked, the cat image changes
 [ ] - add nice looking CSS
 [ ] - make the icons disappear after my 30 seconds
+[ ] - make api of cat meow messages

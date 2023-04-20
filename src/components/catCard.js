@@ -16,9 +16,9 @@ export default function CatCard() {
         <>
             <Card centered>
                 <Image className="cat-image" src={image} />
-                <Header textAlign='center'>
-                    meow
-                </Header>
+                <Card.Content>
+                    <Card.Header>Meow</Card.Header>
+                </Card.Content>
             </Card>
 
         </>

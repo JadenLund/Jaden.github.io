@@ -1,4 +1,16 @@
-.background {
+:root {
 
-    background-color: black;
+    background-image: linear-gradient(to bottom right, #4652ff, #ff9592);
+
 }
+
+.background-coloring {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #737DFE, #FFCAC9);
+
+}
+
+/* {
+    background-image: linear-gradient(to bottom right, #737DFE, #FFCAC9);
+
+} */
