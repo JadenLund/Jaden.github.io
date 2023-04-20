@@ -25,21 +25,35 @@ export default function ParticleJS() {
             options={{
                 fpsLimit: 120,
                 interactivity: {
+                    //hover events, mode trail
                     events: {
+                        onHover: {
+                            enable: true,
+                            mode: "trail",
+                        },
                         onClick: {
                             enable: true,
                             mode: "push",
                         },
                         resize: true,
                     },
+                    duration: .1,
                     modes: {
                         push: {
                             quantity: 4,
                         },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4,
+                        trail: {
+                            delay: .011,
+                            pauseOnStop: true,
+                            quantity: 1,
+                            particles: {
+                                size: {
+                                    value: { min: 5, max: 10 },
+                                },
+                            },
+
                         },
+
                     },
                 },
                 particles: {
@@ -68,10 +82,6 @@ export default function ParticleJS() {
                         random: false,
                         speed: 2,
                         straight: false,
-                        // rotate: {
-                        //     x: 600,
-                        //     y: 1200,
-                        // }
 
                     },
 
@@ -102,7 +112,8 @@ export default function ParticleJS() {
                     },
                 },
                 detectRetina: true,
-            }}
+            }
+            }
         />
     );
 };
