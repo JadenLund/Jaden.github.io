@@ -16,10 +16,11 @@ export default function CatCard() {
         <>
             <Card centered>
                 <Image className="cat-image" src={image} />
+                <Header textAlign='center'>
+                    meow
+                </Header>
             </Card>
-            <Header textAlign='center'>
-                meow
-            </Header>
+
         </>
     );
 };
