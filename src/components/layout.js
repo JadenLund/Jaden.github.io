@@ -11,7 +11,7 @@ export default function Layout() {
         <>
             <div className="background-coloring">
                 <ParticleJS />
-                <Grid padded style={{ height: '72vh' }}>
+                <Grid padded style={{ height: '120vh' }}>
                     <Grid.Row style={{ height: '70%' }}>
                         <Grid.Column >
                             <div className="cat-card"> <CatCard /> </div>
@@ -19,9 +19,8 @@ export default function Layout() {
                     </Grid.Row>
                     <Grid.Row style={{ height: '30%' }}>
                         <Grid.Column >
-                            <Image className="marquee" src={CatRun} />
+                            <Image size='small' className="marquee" src={CatRun} />
                         </Grid.Column>
-
                     </Grid.Row>
                 </Grid>
             </div>
