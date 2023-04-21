@@ -14,7 +14,7 @@ export default function CatCard() {
 
     return (
         <>
-            <Card centered>
+            <Card centered >
                 <Image className="cat-image" src={image} />
                 <Card.Content>
                     <Card.Header>Meow</Card.Header>

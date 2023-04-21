@@ -1,16 +1,33 @@
 :root {
-
     background-image: linear-gradient(to bottom right, #4652ff, #ff9592);
-
 }
 
 .background-coloring {
     height: 100vh;
+    overflow: hidden;
     background-image: linear-gradient(to bottom right, #737DFE, #FFCAC9);
 
 }
 
-/* {
-    background-image: linear-gradient(to bottom right, #737DFE, #FFCAC9);
+.marquee {
+    overflow: hidden;
+    position: relative;
+    animation: MarqueeLeft linear 10s infinite;
+    grid-area: footer;
+}
 
-} */
+@keyframes MarqueeLeft {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+.cat-image {
+    /* max-width: 100px; */
+    max-height: 400px;
+}

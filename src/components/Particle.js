@@ -23,11 +23,15 @@ export default function ParticleJS() {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                // duration: .4,
+                // makes them all dissappear
                 fpsLimit: 120,
                 interactivity: {
-                    //hover events, mode trail
+                    //duration: .4,
                     events: {
+                        //duration: .4,
                         onHover: {
+                            //duration: .4,
                             enable: true,
                             mode: "trail",
                         },
@@ -37,26 +41,26 @@ export default function ParticleJS() {
                         },
                         resize: true,
                     },
-                    duration: .1,
                     modes: {
                         push: {
                             quantity: 4,
                         },
                         trail: {
+                            //duration: .4,
                             delay: .011,
                             pauseOnStop: true,
                             quantity: 1,
                             particles: {
+                                //duration: .4,
                                 size: {
                                     value: { min: 5, max: 10 },
                                 },
                             },
-
                         },
-
                     },
                 },
                 particles: {
+                    // duration: .4,
                     rotate: {
                         value: 0,
                         direction: "random",
@@ -65,11 +69,6 @@ export default function ParticleJS() {
                             enable: true
                         }
                     },
-
-                    color: {
-                        value: "#ffffff",
-                    },
-
                     collisions: {
                         enable: true,
                     },
@@ -77,14 +76,12 @@ export default function ParticleJS() {
                         direction: "none",
                         enable: true,
                         outModes: {
-                            default: "bounce",
+                            default: "destroy",
                         },
                         random: false,
                         speed: 2,
                         straight: false,
-
                     },
-
                     number: {
                         density: {
                             enable: true,
@@ -95,6 +92,7 @@ export default function ParticleJS() {
                     opacity: {
                         value: 0.5,
                     },
+                    //  //duration: .4,
                     shape: {
                         type: "image",
                         images: [
@@ -105,7 +103,6 @@ export default function ParticleJS() {
                                 src: paw
                             }
                         ],
-
                     },
                     size: {
                         value: { min: 10, max: 20 },
