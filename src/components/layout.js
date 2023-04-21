@@ -1,11 +1,16 @@
 import ParticleJS from "./Particle"
+import React from "react"
 import CatCard from "./catCard"
 import "./background.css"
 import CatRun from '../../src/components/assets/CatRun.gif'
 import { Image } from "semantic-ui-react"
-import { Grid, Segment } from 'semantic-ui-react'
+import { Grid, Segment, Modal, Button, Embed } from 'semantic-ui-react'
+import MyModal from "./modal"
 
 export default function Layout() {
+    const [open, setOpen] = React.useState(false)
+    function handleClick() {
+    }
     return (
         // #737DFE – #FFCAC9
         <>
@@ -19,11 +24,13 @@ export default function Layout() {
                     </Grid.Row>
                     <Grid.Row style={{ height: '30%' }}>
                         <Grid.Column >
-                            <Image size='small' className="marquee" src={CatRun} />
+                            <MyModal />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
+
             </div>
+
         </>
 
     )

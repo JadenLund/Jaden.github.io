@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Card, Header } from "semantic-ui-react";
 import { Image } from "semantic-ui-react";
+import MyModal from "./modal";
 
 export default function CatCard() {
     const [image, setImage] = React.useState({ image: "" });

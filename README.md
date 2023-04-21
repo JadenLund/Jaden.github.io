@@ -3,7 +3,8 @@
 [ ] - add nice looking CSS
 [ ] - make the icons disappear after my 30 seconds
 [ ] - make api of cat meow messages
-[ ] - make moving cat stuck to bottom of page
-[ ] - make the cat images have a max size, or at least a set height
+[X] - make moving cat stuck to bottom of page
+[X] - make the cat images have a max size, or at least a set height
+[ ] - Add module for this youtube video: https://www.youtube.com/watch?v=e1OWVKtAp7s&ab_channel=MorpheusSoftware
 
 https://particles.js.org/docs/classes/Core_Particle.Particle.html#container4
