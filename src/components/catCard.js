@@ -1,22 +1,24 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { Card, Header } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 import { Image } from "semantic-ui-react";
-import MyModal from "./modal";
-
 export default function CatCard() {
-    const [image, setImage] = React.useState({ image: "" });
+    const [catInfo, setCatInfo] = React.useState({ catInfo: "" });
+
+    function handleClick() {
+        console.log(catInfo)
+    }
 
     React.useEffect(() => {
         fetch('https://api.thecatapi.com/v1/images/search?api_key=live_cryzeMviH86EMISpx1pIcPxIE0uVDaKMbZ2gFSeCEipxAwEztUwW38LZ75mtwl8h')
             .then(resp => resp.json())
-            .then(data => setImage(data[0].url))
+            .then(data => setCatInfo(data[0]))
     }, [])
 
     return (
         <>
             <Card centered >
-                <Image className="cat-image" src={image} />
+
+                <Image type="submit" id="catImage" onClick={handleClick} className="cat-image" src={catInfo.url} />
                 <Card.Content>
                     <Card.Header>Meow</Card.Header>
                 </Card.Content>

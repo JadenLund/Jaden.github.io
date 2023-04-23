@@ -15,6 +15,7 @@ export default function MyModal() {
             <Modal.Content>
                 <Embed
                     id='e1OWVKtAp7s'
+                    placeholder='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg/1200px-YouTube_play_button_icon_%282013%E2%80%932017%29.svg.png'
                     source='youtube'
                 />
             </Modal.Content>

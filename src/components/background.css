@@ -10,10 +10,15 @@
 }
 
 .marquee {
+
     overflow: hidden;
     position: relative;
     animation: MarqueeLeft linear 10s infinite;
     grid-area: footer;
+}
+
+.cat-image:hover {
+    cursor: url("../../src/components/assets/Speckles_Kitty_paw-1.png.png");
 }
 
 @keyframes MarqueeLeft {
@@ -24,4 +29,10 @@
     100% {
         left: 100%;
     }
+}
+
+
+body {
+    cursor: url("../../src/components/assets/Speckles_Kitty_paw-1.png.png"), auto;
+    /* cursor: url("../../src/components/assets/Speckles_Kitty_paw-1.png.png"), active; */
 }
