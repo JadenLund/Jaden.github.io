@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import { Image } from "semantic-ui-react";
+
 export default function CatCard() {
     const [catInfo, setCatInfo] = React.useState({ catInfo: "" });
 
@@ -18,9 +19,10 @@ export default function CatCard() {
         <>
             <Card centered >
 
-                <Image type="submit" id="catImage" onClick={handleClick} className="cat-image" src={catInfo.url} />
+                <Image onClick={handleClick} className="cat-image" src={catInfo.url} />
                 <Card.Content>
-                    <Card.Header>Meow</Card.Header>
+                    <Card.Header textAlign="center">Meow</Card.Header>
+                    {/* if there is a cat breed, print it */}
                 </Card.Content>
             </Card>
 

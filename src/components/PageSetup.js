@@ -1,10 +1,10 @@
 import React from "react";
 import ParticleJS from "./Particle";
 import { Grid, Image } from "semantic-ui-react";
-import MyModal from "./modal";
+import MyModal from "./MyModal";
 import catfall from "../../src/components/assets/catfall.png"
-import CatCard from "./catCard";
-
+import CatCard from "./CatCard";
+import './Page.css'
 
 export default function PageSetup() {
 

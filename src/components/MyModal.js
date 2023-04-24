@@ -1,4 +1,4 @@
-import { Modal, Button, Image, Header, Embed } from "semantic-ui-react"
+import { Modal, Image, Embed } from "semantic-ui-react"
 import React from "react"
 import CatRun from '../../src/components/assets/CatRun.gif'
 
