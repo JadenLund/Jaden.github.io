@@ -1,7 +1,7 @@
 import React from "react";
 // import { ReactDOM } from "react";
 
-import PageSetup from "./components/PageSetup";
+import PageSetup from "./src/components/PageSetup";
 export default function App() {
 
   return (
